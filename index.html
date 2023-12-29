@@ -56,17 +56,41 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Chao Xu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yuan Dong</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Qi Zuo</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Junfei Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiaodan Ye</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Wenbo Geng</a><sup>3</sup>,</span>
+                <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuxiang Zhang</a><sup>3</sup>,</span>
+                <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiaodong Gu</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lingteng Qiu</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhengyi Zhao</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qing Ran</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiayi Jiang</a>,</span>
+                <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zilong Dong</a>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Liefeng Bo</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institute for Intelligent Computing, Alibaba Group</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>1</sup>Rendering Team  </small></span>
+                    <span class="eql-cntrb" style="white-space: nowrap;"><small><sup>2</sup>3D Object Generation Team  </small></span>
+                    <span class="eql-cntrb"><small><sup>3</sup>Engineering Team</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -133,7 +157,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Samples of the HQRDO. From top to bottom, there are the RGB, Albedo, Normal and Depth images.
+        Samples of the HQR-Objaverse. From top to bottom, there are the RGB, Albedo, Normal and Depth images.
       </h2>
     </div>
   </div>
@@ -148,7 +172,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            High-Quality Rendering Dataset of Objaverse (HQRDO) is rendered using the XX renderer on Objaverse with A10 for about 2000 GPU hours, yielding 2800,0000 number of albedo, RGB, Depth, and Normal images. We render 38 views of a centered object. In addition, we mannuly split the subset of the dataset into 10 general including including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
+            High-Quality Rendering Dataset of Objaverse (HQR-Objaverse) is rendered using the XX renderer on Objaverse with A10 for about 2000 GPU hours, yielding 3000,0000 number of albedo, RGB, Depth, and Normal images. We render 38 views of a centered object. In addition, we mannuly split the subset of the dataset into 10 general including including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
           </p>
           <img src="static/images/intro.png" alt="MY ALT TEXT"/>
         </div>
@@ -188,7 +212,7 @@
         <!-- Your image here -->
         <img src="static/images/application.png" alt="MY ALT TEXT"/>
         <h2 class="content has-text-justified">
-          We have used HQRDO for training MultiView Normal-Depth diffusion model (ND-MV) and depth-condition MultiView Albedo diffusion model (Albedo-MV), which are employed for 3D object generation through score-distillation sampling (SDS) in RichDreamer.
+          We have used HQR-Objaverse for training MultiView Normal-Depth diffusion model (ND-MV) and depth-condition MultiView Albedo diffusion model (Albedo-MV), which are employed for 3D object generation through score-distillation sampling (SDS) in RichDreamer.
        </h2>
      </div>
     </div>
