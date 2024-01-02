@@ -88,9 +88,9 @@
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institute for Intelligent Computing, Alibaba Group</span>
-                    <span class="eql-cntrb"><small><br><sup>1</sup>Rendering Team &nbsp</small></span>
-                    <span class="eql-cntrb" style="white-space: nowrap;"><small><sup>2</sup>3D Object Generation Team&nbsp</small></span>
-                    <span class="eql-cntrb"><small><sup>3</sup>Engineering Team</small></span>
+                    <span class="eql-cntrb"><small><br><sup>1</sup>TIDE Rendering &nbsp</small></span>
+                    <span class="eql-cntrb" style="white-space: nowrap;"><small><sup>2</sup>3D Object Annotation and Generation&nbsp</small></span>
+                    <span class="eql-cntrb"><small><sup>3</sup>Simulation Platform</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -157,7 +157,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Samples of the HQR-Objaverse. From top to bottom, there are the RGB, Albedo, Normal and Depth images.
+        Samples of the dataset. From top to bottom, there are the RGB, Albedo, Normal and Depth images.
       </h2>
     </div>
   </div>
@@ -172,7 +172,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            High-Quality Rendering Dataset of Objaverse (HQR-Objaverse) is rendered using the <i>TIDE</i> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 3000,0000 number of albedo, RGB, Depth, and Normal images. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the objaverse dataset into 10 general categories including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
+            High-Quality Rendering Dataset of Objaverse (HQR-Objaverse) is rendered using the <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0" target="_blank" style="color: rgb(47, 141, 255);">TIDE </a> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 30,000,000 images of albedo, RGB, Depth, and Normal map. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the objaverse dataset into 10 general categories including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
           </p>
           <img src="static/images/intro.png" alt="MY ALT TEXT"/>
         </div>
@@ -210,10 +210,11 @@
       <h2 class="title is-3">Application</h2>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/application.png" alt="MY ALT TEXT"/>
+<!--        <img src="static/images/application.png" alt="MY ALT TEXT"/>-->
         <h2 class="content has-text-justified">
-          We have used HQR-Objaverse for training MultiView Normal-Depth diffusion model (ND-MV) and depth-condition MultiView Albedo diffusion model (Albedo-MV), which are employed for 3D object generation through score-distillation sampling (SDS) in RichDreamer.
+          We have used HQR-Objaverse for training MultiView Normal-Depth diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">ND-MV</a>) and depth-condition MultiView Albedo diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">Albedo-MV</a>), which are employed for 3D object generation through score-distillation sampling (SDS) in <a href="https://aigc3d.github.io/richdreamer/" style="color: rgb(47, 141, 255);" target="_blank">RichDreamer </a> .
        </h2>
+      <img src="static/images/application.png" alt="MY ALT TEXT"/>
      </div>
     </div>
   </div>
