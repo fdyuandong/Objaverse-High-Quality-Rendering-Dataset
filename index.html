@@ -56,33 +56,33 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Chao Xu</a><sup>1</sup>,</span>
+                <a href="eric.xc@alibaba-inc.com" target="_blank">Chao Xu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yuan Dong</a><sup>2</sup>,</span>
+                <a href="dy283090@alibaba-inc.com" target="_blank">Yuan Dong</a><sup>2</sup>,</span>
                 <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Qi Zuo</a><sup>2</sup>,</span>
+                <a href="muyuan.zq@alibaba-inc.com" target="_blank">Qi Zuo</a><sup>2</sup>,</span>
                 <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Junfei Zhang</a><sup>1</sup>,</span>
+                <a href="miracle.zjf@alibaba-inc.com" target="_blank">Junfei Zhang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiaodan Ye</a><sup>1</sup>,</span>
+                <a href="doris.yxd@alibaba-inc.com" target="_blank">Xiaodan Ye</a><sup>1</sup>,</span>
                 <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Wenbo Geng</a><sup>3</sup>,</span>
+                <a href="rengui.gwb@alibaba-inc.com" target="_blank">Wenbo Geng</a><sup>3</sup>,</span>
                 <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuxiang Zhang</a><sup>3</sup>,</span>
+                <a href="yuxiangzhang.zyx@alibaba-inc.com" target="_blank">Yuxiang Zhang</a><sup>3</sup>,</span>
                 <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiaodong Gu</a><sup>2</sup>,</span>
+                <a href="dadong.gxd@alibaba-inc.com" target="_blank">Xiaodong Gu</a><sup>2</sup>,</span>
                 <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lingteng Qiu</a><sup>2</sup>,</span>
+                <a href="qiulingteng.qlt@alibaba-inc.com" target="_blank">Lingteng Qiu</a><sup>2</sup>,</span>
                 <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhengyi Zhao</a><sup>2</sup>,</span>
+                <a href="bushe.zzy@alibaba-inc.com" target="_blank">Zhengyi Zhao</a><sup>2</sup>,</span>
                 <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qing Ran</a><sup>1</sup>,</span>
+                <a href="ranqing.rq@alibaba-inc.com" target="_blank">Qing Ran</a><sup>1</sup>,</span>
                 <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiayi Jiang</a>,</span>
+                <a href="jiayi.jjy@alibaba-inc.com" target="_blank">Jiayi Jiang</a>,</span>
                 <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zilong Dong</a>,</span>
+                <a href="list.dzl@alibaba-inc.com" target="_blank">Zilong Dong</a>,</span>
                 <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Liefeng Bo</a>
+                <a href="liefeng.bo@alibaba-inc.com" target="_blank">Liefeng Bo</a>
                   </span>
                   </div>
 
@@ -108,7 +108,7 @@
 
                     <!-- Video link -->
                     <span class="link-block">
-                      <a href="https://www.youtube.com/watch?v=0LCIS8d4t6c" target="_blank"
+                      <a href="https://www.youtube.com/watch?v=APXhAMH9-hw" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -119,10 +119,10 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://huggingface.co/datasets/3DAIGC/Objaverse-HQ-Rendering" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fas fa-desktop"></i>
                     </span>
                     <span>Download</span>
                   </a>
@@ -172,7 +172,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            High-Quality Rendering Dataset of Objaverse (HQR-Objaverse) is rendered using the XX renderer on Objaverse with A10 for about 2000 GPU hours, yielding 3000,0000 number of albedo, RGB, Depth, and Normal images. We render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the subset of the dataset into 10 general including including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
+            High-Quality Rendering Dataset of Objaverse (HQR-Objaverse) is rendered using the <i>TIDE</i> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 3000,0000 number of albedo, RGB, Depth, and Normal images. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the objaverse dataset into 10 general categories including Human-Shape, Animals, Daily-Used, Furnitures, Buildings&&Outdoor, Transportations, Plants, Food, Electronics and Poor-quality.
           </p>
           <img src="static/images/intro.png" alt="MY ALT TEXT"/>
         </div>
@@ -193,7 +193,7 @@
 
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/0LCIS8d4t6c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/APXhAMH9-hw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -254,9 +254,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
           </p>
 
         </div>
